@@ -3,6 +3,9 @@ body{
   padding: 0;
   background: white;
 }
+@media screen and (max-width: 767px){
+...
+}
 header{
   background-color: white;
   display: flex;
