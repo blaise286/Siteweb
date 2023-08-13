@@ -1,72 +1,71 @@
-body {
-    font-size: 15pt;
+body{
+  margin: 0;
+  padding: 0;
+  background: white;
 }
-nav.nav div{
+header{
+  background-color: white;
   display: flex;
   align-items: center;
-  background-color: white;
-  border-bottom: 3px solid darkgray;
+  height: 205px;
 }
-h1{
-  margin-left: 30px;
+div.slide{
+  position: absolute;
+  top: 200px;
+  width: 980px;
+  height: 900px;
+  background: url(images17.jpeg);
+  background-size: cover;
+  animation: animate 50s infinite;
 }
-a{
+header h1{
   position: relative;
-  left: 100px;
-  margin: 20px;
+  left: 15px;
+  color: red;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+li{
+  display: inline;
+}
+li a{
   text-decoration: none;
-  color: slategray;
-}
-a button{
-  background-color: orangered;
-  height: 50px;
-  width: 170px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-}
-main.main{
-  background: powderblue;
-  height: 700px;
-}
-.main div{
-  position: absolute;
-  top: 15%;
-  left: 15%;
-}
-img{
-  height: 350px;
-  width: 350px;
-  position: absolute;
-  left: 450px;
-  top: 10%;
-  border-radius: 350px;
-}
-h4{
-  color: orangered;
-}
-.main div a{
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  top: 130%;
-  background-color: orangered;
-  height: 39px;
-  width: 150px;
-  left: 1%;
-  text-align: center;
-  border-radius: 150px;
-}
-footer{
-  background-color: white;
-  position: absolute;
-  left: 32%;
-}
-h6{
-  margin-left: 80px;
-  color: orangered;
-  font-size: 20px;
-}
-footer p{
+  position: relative;
+  left: 40%;
+  padding: 10px;
+  color: red;
+  text-transform: uppercase;
+  border-radius: 20px;
   font-weight: bold;
-  font-size: 30px;
+}
+a:hover{
+  color: white;
+  background: red;
+}
+@keyframes animate {
+  25%{
+    background: url(images3.jpeg);
+    background-size: cover;
+  }
+  50%{
+    background: url(images1.jpeg);
+    background-size: cover;
+  }
+  75%{
+    background: url(images4.jpeg);
+    background-size: cover;
+  }
+  100%{
+    background: url(téléchargement5.jpeg);
+    background-size: cover;
+  }
+}
+main video{
+  position: absolute;
+  top: 60%;
+}
+main video{
+  width: 90%;
+  position: absolute;
+  left: 50px;
+}
