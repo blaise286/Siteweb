@@ -3,30 +3,41 @@ body{
   padding: 0;
   background: white;
 }
-@media screen and (max-width: 767px){
-...
-}
 header{
   background-color: white;
   display: flex;
   align-items: center;
-  height: 205px;
+  height: 70px;
 }
-div.slide{
+.rond{
+  color: white;
+  border: 3px solid white;
+  border-radius: 1400px 1400px 1400px;
+  height: 1400px;
+  width: 1400px;
   position: absolute;
-  top: 200px;
-  width: 980px;
-  height: 900px;
-  background: url(images17.jpeg);
-  background-size: cover;
-  animation: animate 50s infinite;
+  top: 10%;
+  right: 500px;
 }
-header h1{
+
+.ronde{
+  color: white;
+  border: 3px solid white;
+  border-radius: 1700px 1700px 1700px;
+  height: 1700px;
+  width: 1700px;
+  position: absolute;
+  top: 5%;
+  right: 60px;
+}
+header img{
   position: relative;
-  left: 15px;
+  top: 40px;
   color: red;
   text-transform: uppercase;
   border-radius: 5px;
+  height: 300px;
+  width: 300px;
 }
 li{
   display: inline;
@@ -34,8 +45,10 @@ li{
 li a{
   text-decoration: none;
   position: relative;
-  left: 40%;
+  left: 80px;
+  top: 40px;
   padding: 10px;
+  font-size: 20px;
   color: red;
   text-transform: uppercase;
   border-radius: 20px;
@@ -45,30 +58,172 @@ a:hover{
   color: white;
   background: red;
 }
-@keyframes animate {
+main video{
+  width: 100%;
+  position: absolute;
+  left: 4%;
+  top: 2250px;
+  
+}
+.date p{
+  position: relative;
+  top: 725px;
+  left: 4%;
+  font-size: 50px;
+}
+.slideshow{
+  width: 1050px;
+  height: 2000px;
+  position: relative;
+  top: 90px;
+  background: url(images20.jpeg);
+  background-size: cover;
+  border: 2px solid black;
+  animation: animate 20s infinite;
+}
+@keyframes animate{
   25%{
-    background: url(images3.jpeg);
+    background: url(images21.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
   }
   50%{
-    background: url(images1.jpeg);
+    background: url(images23.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
   }
   75%{
-    background: url(images4.jpeg);
+    background: url(images24.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
   }
   100%{
-    background: url(téléchargement5.jpeg);
+    background: url(images21.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
-main video{
+.travail{
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 60%;
+  top: 154%;
 }
-main video{
-  width: 90%;
+.travail a{
+  position: relative;
+  left: 78%;
+  text-decoration: underline;
+  color: black;
+  font-size: 30px;
+  border-radius: 20px;
+}
+.travail a:hover{
+  color: white;
+  background-color: black;
+}
+.travail h1{
+  position: relative;
+  left: 6%;
+}
+.articles img{
   position: absolute;
-  left: 50px;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  left: 4%;
+  top: 160%;
 }
+.articles p{
+  position: absolute;
+  top: 186%;
+  left: 4%;
+  font-weight: 10px;
+  font-size: 35px;
+}
+.articles a{
+  position: absolute;
+  top: 195%;
+  left: 35px;
+  font-size: 40px;
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+	
+	/* conserver le ratio des images */
+
+	img {
+		height: auto;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+	
+	/* masquer/afficher les éléments  */
+
+	.u-mobile {          display: block;          display: revert !important; /* affichage des éléments */        }        .u-no-mobile {          display: none !important; /* masquage des éléments */        }
+	
+	/* Un message personnalisé */
+
+	body:before {
+		content: "Version mobile du site";
+		display: block;
+		text-align: center;
+		font-style: italic;
+		color: 
+#777;
+	}
+  }
